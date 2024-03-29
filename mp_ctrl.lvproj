@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">192.168.0.21</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -115,6 +115,7 @@ AddOutputFilter chunkFilter
 		<Item Name="ISR.vi" Type="VI" URL="../ISR.vi"/>
 		<Item Name="ISRglobals.vi" Type="VI" URL="../ISRglobals.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
 		<Item Name="reset_PWM_IRQ.vi" Type="VI" URL="../reset_PWM_IRQ.vi"/>
 		<Item Name="write_vector.vi" Type="VI" URL="../write_vector.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -238,6 +239,7 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Register DI IRQ.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/IRQ/vis/myRIO v1.1 Register DI IRQ.vi"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
 				<Item Name="PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels Enum.ctl"/>
