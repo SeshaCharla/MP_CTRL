@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">192.168.0.21</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -115,6 +115,7 @@ AddOutputFilter chunkFilter
 		<Item Name="ISR.vi" Type="VI" URL="../ISR.vi"/>
 		<Item Name="ISRglobals.vi" Type="VI" URL="../ISRglobals.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
 		<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
 		<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
 		<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
