@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">192.168.0.21</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -108,19 +108,31 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="activateESC.vi" Type="VI" URL="../activateESC.vi"/>
-		<Item Name="calc_omega.vi" Type="VI" URL="../calc_omega.vi"/>
-		<Item Name="clear_IRQ_data.vi" Type="VI" URL="../clear_IRQ_data.vi"/>
-		<Item Name="get_omega.vi" Type="VI" URL="../get_omega.vi"/>
-		<Item Name="ISR.vi" Type="VI" URL="../ISR.vi"/>
-		<Item Name="ISRglobals.vi" Type="VI" URL="../ISRglobals.vi"/>
+		<Item Name="InputFunctions" Type="Folder">
+			<Item Name="u2uw.vi" Type="VI" URL="../u2uw.vi"/>
+			<Item Name="up2uw.vi" Type="VI" URL="../up2uw.vi"/>
+			<Item Name="uw2u.vi" Type="VI" URL="../uw2u.vi"/>
+			<Item Name="uw2up.vi" Type="VI" URL="../uw2up.vi"/>
+		</Item>
+		<Item Name="IO" Type="Folder">
+			<Item Name="activateESC.vi" Type="VI" URL="../activateESC.vi"/>
+			<Item Name="reset_PWM_IRQ.vi" Type="VI" URL="../reset_PWM_IRQ.vi"/>
+			<Item Name="write_vector.vi" Type="VI" URL="../write_vector.vi"/>
+		</Item>
+		<Item Name="RefSys" Type="Folder">
+			<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
+			<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
+			<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
+			<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
+		</Item>
+		<Item Name="RPM" Type="Folder">
+			<Item Name="calc_omega.vi" Type="VI" URL="../calc_omega.vi"/>
+			<Item Name="clear_IRQ_data.vi" Type="VI" URL="../clear_IRQ_data.vi"/>
+			<Item Name="get_omega.vi" Type="VI" URL="../get_omega.vi"/>
+			<Item Name="ISR.vi" Type="VI" URL="../ISR.vi"/>
+			<Item Name="ISRglobals.vi" Type="VI" URL="../ISRglobals.vi"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
-		<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
-		<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
-		<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
-		<Item Name="reset_PWM_IRQ.vi" Type="VI" URL="../reset_PWM_IRQ.vi"/>
-		<Item Name="write_vector.vi" Type="VI" URL="../write_vector.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
