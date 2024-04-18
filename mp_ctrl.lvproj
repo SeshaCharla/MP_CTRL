@@ -133,6 +133,10 @@ AddOutputFilter chunkFilter
 		<Item Name="ParmEst" Type="Folder">
 			<Item Name="phi_d.vi" Type="VI" URL="../phi_d.vi"/>
 			<Item Name="phi_du.vi" Type="VI" URL="../phi_du.vi"/>
+			<Item Name="Proj.vi" Type="VI" URL="../Proj.vi"/>
+			<Item Name="Grad_Adapt.vi" Type="VI" URL="../Grad_Adapt.vi"/>
+			<Item Name="vecProj.vi" Type="VI" URL="../vecProj.vi"/>
+			<Item Name="th_update.vi" Type="VI" URL="../th_update.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
