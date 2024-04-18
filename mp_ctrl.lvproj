@@ -26,7 +26,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">192.168.0.21</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -130,7 +130,10 @@ AddOutputFilter chunkFilter
 			<Item Name="up2PWM.vi" Type="VI" URL="../up2PWM.vi"/>
 			<Item Name="PWM2up.vi" Type="VI" URL="../PWM2up.vi"/>
 		</Item>
-		<Item Name="ParmEst" Type="Folder"/>
+		<Item Name="ParmEst" Type="Folder">
+			<Item Name="phi_d.vi" Type="VI" URL="../phi_d.vi"/>
+			<Item Name="phi_du.vi" Type="VI" URL="../phi_du.vi"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
