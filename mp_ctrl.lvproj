@@ -20,12 +20,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Project Documentation" Type="Folder">
-			<Item Name="Documentation Images" Type="Folder">
-				<Item Name="myRIO_Project_Diagram.gif" Type="Document" URL="../documentation/myRIO_Project_Diagram.gif"/>
-			</Item>
-			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
-		</Item>
+		<Item Name="Project Documentation" Type="Folder"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -40,6 +35,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
@@ -108,22 +104,10 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="InputFunctions" Type="Folder">
-			<Item Name="u2uw.vi" Type="VI" URL="../u2uw.vi"/>
-			<Item Name="up2uw.vi" Type="VI" URL="../up2uw.vi"/>
-			<Item Name="uw2u.vi" Type="VI" URL="../uw2u.vi"/>
-			<Item Name="uw2up.vi" Type="VI" URL="../uw2up.vi"/>
-		</Item>
 		<Item Name="IO" Type="Folder">
 			<Item Name="activateESC.vi" Type="VI" URL="../activateESC.vi"/>
 			<Item Name="reset_PWM_IRQ.vi" Type="VI" URL="../reset_PWM_IRQ.vi"/>
 			<Item Name="write_vector.vi" Type="VI" URL="../write_vector.vi"/>
-		</Item>
-		<Item Name="RefSys" Type="Folder">
-			<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
-			<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
-			<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
-			<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
 		</Item>
 		<Item Name="RPM" Type="Folder">
 			<Item Name="calc_omega.vi" Type="VI" URL="../calc_omega.vi"/>
@@ -132,6 +116,21 @@ AddOutputFilter chunkFilter
 			<Item Name="ISR.vi" Type="VI" URL="../ISR.vi"/>
 			<Item Name="ISRglobals.vi" Type="VI" URL="../ISRglobals.vi"/>
 		</Item>
+		<Item Name="RefSys" Type="Folder">
+			<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
+			<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
+			<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
+			<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
+		</Item>
+		<Item Name="InputFunctions" Type="Folder">
+			<Item Name="u2uw.vi" Type="VI" URL="../u2uw.vi"/>
+			<Item Name="up2uw.vi" Type="VI" URL="../up2uw.vi"/>
+			<Item Name="uw2u.vi" Type="VI" URL="../uw2u.vi"/>
+			<Item Name="uw2up.vi" Type="VI" URL="../uw2up.vi"/>
+			<Item Name="up2PWM.vi" Type="VI" URL="../up2PWM.vi"/>
+			<Item Name="PWM2up.vi" Type="VI" URL="../PWM2up.vi"/>
+		</Item>
+		<Item Name="ParmEst" Type="Folder"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
