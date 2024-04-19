@@ -1,4 +1,4 @@
-clear; clc;
+%clear; clc;
 
 wr = 700;
 Fs = 250;
