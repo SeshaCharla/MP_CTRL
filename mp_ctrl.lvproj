@@ -118,9 +118,7 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="RefSys" Type="Folder">
 			<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
-			<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
-			<Item Name="ref_gen_proc.vi" Type="VI" URL="../ref_gen_proc.vi"/>
-			<Item Name="ref_sys.vi" Type="VI" URL="../ref_sys.vi"/>
+			<Item Name="G_ref.vi" Type="VI" URL="../G_ref.vi"/>
 		</Item>
 		<Item Name="InputFunctions" Type="Folder">
 			<Item Name="u2uw.vi" Type="VI" URL="../u2uw.vi"/>
@@ -137,6 +135,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Grad_Adapt.vi" Type="VI" URL="../Grad_Adapt.vi"/>
 			<Item Name="vecProj.vi" Type="VI" URL="../vecProj.vi"/>
 			<Item Name="th_update.vi" Type="VI" URL="../th_update.vi"/>
+		</Item>
+		<Item Name="CtrlIn" Type="Folder">
+			<Item Name="Um.vi" Type="VI" URL="../Um.vi"/>
+			<Item Name="Us1.vi" Type="VI" URL="../Us1.vi"/>
+			<Item Name="sat.vi" Type="VI" URL="../sat.vi"/>
+			<Item Name="Us2.vi" Type="VI" URL="../Us2.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -317,6 +321,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
