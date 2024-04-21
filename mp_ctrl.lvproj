@@ -26,7 +26,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">192.168.0.21</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -108,6 +108,7 @@ AddOutputFilter chunkFilter
 			<Item Name="activateESC.vi" Type="VI" URL="../activateESC.vi"/>
 			<Item Name="reset_PWM_IRQ.vi" Type="VI" URL="../reset_PWM_IRQ.vi"/>
 			<Item Name="write_vector.vi" Type="VI" URL="../write_vector.vi"/>
+			<Item Name="PWMinManual.vi" Type="VI" URL="../PWMinManual.vi"/>
 		</Item>
 		<Item Name="RPM" Type="Folder">
 			<Item Name="calc_omega.vi" Type="VI" URL="../calc_omega.vi"/>
@@ -119,6 +120,7 @@ AddOutputFilter chunkFilter
 		<Item Name="RefSys" Type="Folder">
 			<Item Name="read_ref.vi" Type="VI" URL="../read_ref.vi"/>
 			<Item Name="G_ref.vi" Type="VI" URL="../G_ref.vi"/>
+			<Item Name="ref_gen.vi" Type="VI" URL="../ref_gen.vi"/>
 		</Item>
 		<Item Name="InputFunctions" Type="Folder">
 			<Item Name="u2uw.vi" Type="VI" URL="../u2uw.vi"/>
