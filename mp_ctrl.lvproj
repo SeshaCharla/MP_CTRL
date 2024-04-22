@@ -329,6 +329,8 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="theta_vec2array.vi" Type="VI" URL="../theta_vec2array.vi"/>
+			<Item Name="write_vector_of_vectors.vi" Type="VI" URL="../write_vector_of_vectors.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
