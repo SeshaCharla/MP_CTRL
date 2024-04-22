@@ -1,6 +1,6 @@
-%clear; clc;
+clear; clc;
 
-wr = 700;
+wr = 100;
 Fs = 250;
 Ts = 1/Fs;
 

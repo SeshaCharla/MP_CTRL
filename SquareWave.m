@@ -3,13 +3,14 @@ clear all; clc;
 samp_freq = 250;
 tf = 50;
 T = linspace(0, tf, tf*samp_freq);
-u = square(T);
-csvwrite("wd.csv", u');
+u = square(((2*pi)/5)*T);
+wd = 650 + 150*u;
+csvwrite("wd.csv", wd');
 % Plots
 figure()
-plot(T, u);
+plot(T, wd);
 grid on
 xlabel("t");
-ylabel("u");
+ylabel("wd");
         
 
