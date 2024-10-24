@@ -26,7 +26,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">192.168.4.250</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -147,10 +147,14 @@ AddOutputFilter chunkFilter
 		<Item Name="RLSE" Type="Folder">
 			<Item Name="P_upd.vi" Type="VI" URL="../P_upd.vi"/>
 			<Item Name="Gamma_upd.vi" Type="VI" URL="../Gamma_upd.vi"/>
-			<Item Name="get_eps0.vi" Type="VI" URL="../get_eps0.vi"/>
-			<Item Name="get_thetas.vi" Type="VI" URL="../get_thetas.vi"/>
+			<Item Name="theta_upd.vi" Type="VI" URL="../theta_upd.vi"/>
+			<Item Name="eps0_upd.vi" Type="VI" URL="../eps0_upd.vi"/>
 			<Item Name="mk_phi.vi" Type="VI" URL="../mk_phi.vi"/>
 			<Item Name="RLS_main.vi" Type="VI" URL="../RLS_main.vi"/>
+			<Item Name="check_PE.vi" Type="VI" URL="../check_PE.vi"/>
+			<Item Name="fbd_test.vi" Type="VI" URL="../fbd_test.vi"/>
+			<Item Name="loop_test.vi" Type="VI" URL="../loop_test.vi"/>
+			<Item Name="test_RLSE.vi" Type="VI" URL="../test_RLSE.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -332,6 +336,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
