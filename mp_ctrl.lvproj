@@ -149,6 +149,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Gamma_upd.vi" Type="VI" URL="../Gamma_upd.vi"/>
 			<Item Name="get_eps0.vi" Type="VI" URL="../get_eps0.vi"/>
 			<Item Name="get_thetas.vi" Type="VI" URL="../get_thetas.vi"/>
+			<Item Name="mk_phi.vi" Type="VI" URL="../mk_phi.vi"/>
+			<Item Name="RLS_main.vi" Type="VI" URL="../RLS_main.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
