@@ -144,6 +144,12 @@ AddOutputFilter chunkFilter
 			<Item Name="sat.vi" Type="VI" URL="../sat.vi"/>
 			<Item Name="Us2.vi" Type="VI" URL="../Us2.vi"/>
 		</Item>
+		<Item Name="RLSE" Type="Folder">
+			<Item Name="P_upd.vi" Type="VI" URL="../P_upd.vi"/>
+			<Item Name="Gamma_upd.vi" Type="VI" URL="../Gamma_upd.vi"/>
+			<Item Name="get_eps0.vi" Type="VI" URL="../get_eps0.vi"/>
+			<Item Name="get_thetas.vi" Type="VI" URL="../get_thetas.vi"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
