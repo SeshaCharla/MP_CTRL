@@ -26,7 +26,7 @@
 	</Item>
 	<Item Name="NImyRIO" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NImyRIO</Property>
-		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="alias.value" Type="Str">192.168.4.250</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -155,6 +155,10 @@ AddOutputFilter chunkFilter
 			<Item Name="fbd_test.vi" Type="VI" URL="../fbd_test.vi"/>
 			<Item Name="loop_test.vi" Type="VI" URL="../loop_test.vi"/>
 			<Item Name="test_RLSE.vi" Type="VI" URL="../test_RLSE.vi"/>
+		</Item>
+		<Item Name="WinLSE" Type="Folder">
+			<Item Name="stack_Omega.vi" Type="VI" URL="../stack_Omega.vi"/>
+			<Item Name="WinLSE_main.vi" Type="VI" URL="../WinLSE_main.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
